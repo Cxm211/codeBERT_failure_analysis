@@ -26,9 +26,9 @@ The mymodel.bin file is not on GitHub because of the large file size. Please dow
 
 ```
 cd Code/Python
-python Statement&Token.py
+python StatementAndToken.py
 cd Code/Java
-python Statement&Token.py
+python StatementAndToken.py
 ```
 Two files; python_result.csv and java_result.csv will be generated.
 
