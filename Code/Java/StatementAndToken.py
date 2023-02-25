@@ -85,12 +85,16 @@ def get_statement_comment(filename):
         for line in m1:
             if "***" not in line:
                 line = "// " + line
+            else:
+                line = line.replace('***', '')
             mutation_file.write(line)
         mutation_file.write('\n')
         mutation_file.write('\n')
         for line in m2:
             if "***" not in line:
                 line = "// " + line
+            else:
+                line = line.replace('***', '')
             mutation_file.write(line)
         mutation_file.close()
         # Get statement comment prediction result
